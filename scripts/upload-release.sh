@@ -1,7 +1,7 @@
 #!/bin/sh
 
 _version="${1:-22.03-SNAPSHOT}"
-rsync --info=progress2 -a --delete \
+rsync --info=progress2 -ac --delete \
     --exclude 'targets/**/*-imagebuilder-*' \
     --exclude 'targets/**/*-initramfs-*' \
     --exclude 'targets/**/*-squashfs-*' \
